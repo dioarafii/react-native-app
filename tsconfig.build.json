@@ -1,0 +1,45 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // ===== PRODUCTION OPTIMIZATIONS =====
+    "sourceMap": false,
+    "inlineSources": false,
+    "removeComments": true,
+    
+    // ===== EMIT SETTINGS =====
+    "noEmit": false,
+    "declaration": false,
+    "declarationMap": false,
+    
+    // ===== PERFORMANCE =====
+    "incremental": false,
+    
+    // ===== STRICTER CHECKS FOR PRODUCTION =====
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    
+    // ===== OUTPUT DIRECTORY =====
+    "outDir": "./dist"
+  },
+  
+  // ===== MORE RESTRICTIVE EXCLUSIONS FOR BUILD =====
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "e2e",
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/*.e2e.*",
+    "**/*.stories.*",
+    "android",
+    "ios",
+    "scripts",
+    "**/storybook/**",
+    "**/.storybook/**",
+    "stories"
+  ]
+}

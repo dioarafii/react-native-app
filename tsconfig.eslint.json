@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // ===== ESLINT-SPECIFIC SETTINGS =====
+    "allowJs": true,
+    "checkJs": false
+  },
+  
+  "include": [
+    "src/**/*",
+    "**/*.config.js",
+    "**/*.config.ts",
+    ".eslintrc.js"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
+}

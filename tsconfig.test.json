@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // ===== TEST-SPECIFIC SETTINGS =====
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "strict": false
+  },
+  
+  "include": [
+    "src/**/*",
+    "**/__tests__/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "e2e/**/*"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
+}
